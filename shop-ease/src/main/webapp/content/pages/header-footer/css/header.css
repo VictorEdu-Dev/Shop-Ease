@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+body, html {
+	height: 100%;
+	margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    background-image: url('/shop-ease/content/resources/images/tecnology.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    display:flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.section-container-header {
+	font-family: Arial, sans-serif;
+	flex: 1 0 auto;
+	max-height: 13%;
+}
+
+.section {
+	overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    z-index: 1;
+}
+
+.header {
+	background-color: #333;
+	color: white;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+	height: 10%;
+}
+
+.title {
+	margin-left: 20px !important;
+	margin-right: 20px !important;
+	
+	color: white;
+}
+
+.nav-header {
+	margin-right: 20px;
+}
+.nav-header ul {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.nav-header ul li {
+	margin-right: 20px;
+}
+
+.nav-header ul li:last-child {
+	margin-right: 0;
+}
+
+.nav-header ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+.content {
+	display: flex;
+}
+	
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	right: -200px;
+	width: 200px;
+	height: 100%;
+	background-color: #333;
+	color: #fff;
+	transition: right 0.3s;
+	padding: 0px;
+	border-radius: 0 10px 10px 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	z-index: 1;
+}
+
+.sidebar h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 10px;
+	padding: 10px;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 10px;
+}
+
+.sidebar ul li {
+	margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+	text-decoration: underline;
+}
+
+.sidebar.open {
+	right: 0;
+}
+
+.sidebar-close {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	cursor: pointer;
+	color: #fff;
+	font-size: 20px;
+}
+
+.open-profile-admin-button {
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: transparent;
+	padding: 4px 8px;
+	padding-bottom: 2px;
+}
+
+.open-profile-admin-button:hover {
+	background-color: #007bff;
+}
+
+.open-profile-admin-button img {
+	pointer-events: none;
+	width: 24px;
+	height: 24px;
+}
+
+
+.open-sidebar-button {
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: transparent;
+	padding: 4px 8px;
+	padding-bottom: 2px;
+	z-index: -1;
+}
+
+.open-sidebar-button:hover {
+	background-color: #007bff;
+}
+
+.open-sidebar-button img {
+	pointer-events: none;
+	width: 24px;
+	height: 24px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+    	width: 100vh;
+    	height: 100vh;
+    }
+}
