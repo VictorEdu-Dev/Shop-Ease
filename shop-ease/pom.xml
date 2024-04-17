@@ -1,0 +1,139 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>shop-ease</groupId>
+  <artifactId>shop-ease</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <build>
+	<plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>21</release>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-aop</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-beans</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-core</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-jcl -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-jcl</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-expression -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-expression</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-jdbc</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-tx</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-jms -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-jms</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-aspects</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context-support</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-orm</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-oxm -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-oxm</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-struts -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-struts</artifactId>
+	    <version>3.2.18.RELEASE</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-test</artifactId>
+	    <version>6.1.6</version>
+	    <scope>test</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-instrument -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-instrument</artifactId>
+	    <version>6.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-instrument-tomcat -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-instrument-tomcat</artifactId>
+	    <version>4.3.30.RELEASE</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc-portlet -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc-portlet</artifactId>
+	    <version>4.3.30.RELEASE</version>
+	</dependency>
+  </dependencies>
+</project>
