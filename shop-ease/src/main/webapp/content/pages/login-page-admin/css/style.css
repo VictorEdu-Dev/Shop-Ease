@@ -1,28 +1,32 @@
 @charset "UTF-8";
 
+.body-form-main {
+    flex: 1;
+}
+
 .body-form-section {
+	display: flex;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .form-wrapper {
     background-color: rgba(0, 0, 0, 0.8); 
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 400px;
     width: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     margin-top: 30px;
-    z-index: 1000; 
+    z-index: 1; 
 }
 
+.form-wrapper {
+	font-family: Arial, sans-serif;
+}
 
 /* Estilo do h2 */
 h2 {
+	color: white;
     margin-bottom: 20px;
     text-align: left;
 }
@@ -34,6 +38,7 @@ h2 {
 
 /* Estilo do label */
 label {
+	color: white;
     display: block;
     margin-bottom: 5px;
 }
@@ -120,6 +125,10 @@ small {
     display: block;
     margin-top: 15px;
     color: #777;
+}
+
+.form-wrapper p {
+	color: white;
 }
 
 /* Estilo do small a */

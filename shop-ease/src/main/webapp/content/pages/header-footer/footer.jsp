@@ -8,12 +8,12 @@
 	<title>ShopEaser</title>
 </head>
 <body>
-	<div class="section-footers">
+	<footer class="footer-main">
 		<div id="container-footer" class="footer-container">
-			<footer class="footer-copy">
+			<div class="footer-copy">
 				<p>&copy; 2024 ShopEase. Todos os direitos reservados.</p>
-			</footer>
+			</div>
 		</div>
-	</div>
+	</footer>
 </body>
 </html>

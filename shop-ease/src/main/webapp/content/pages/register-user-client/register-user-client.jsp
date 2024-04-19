@@ -11,8 +11,8 @@
 </head>
 <body>
 <jsp:include page="../header-footer/header.jsp"/>
-<section class="section-register-user-client">
-    <div class="container-user-client">
+<main class="main-register-user-client">
+    <section class="container-user-client">
         <div class="inner-container-user-client">
             <h2 class="title-user-client">Cadastrar cliente</h2>
 			<!-- Servlet de destino -->
@@ -67,8 +67,8 @@
                 </div>
             </form>
         </div>
-    </div>
-</section>
+    </section>
+</main>
 <jsp:include page="../header-footer/footer.jsp"></jsp:include>
 </body>
 </html>

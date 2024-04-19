@@ -1,30 +1,28 @@
 @charset "UTF-8";
 
-.section-register-user-client {
-	font-family: Arial, sans-serif;
-	color: white;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.main-register-user-client {
+	flex: 1;
 }
 
 .container-user-client {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    height: auto;
+    width: auto;
 }
 
 .inner-container-user-client {
+	font-family: Arial, sans-serif;
+	color: white;
 	background-color: rgba(0, 0, 0, 0.8); 
-    width: 80%;
-    max-width: 600px;
+    height: auto;
+    width: 400px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 15px;
     border-color: black;
-    margin-top: 140px;
-    margin-bottom: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .title-user-client {
@@ -63,9 +61,11 @@
     font-size: 16px;
     cursor: pointer; 
     border-radius: 4px;
-    margin-top: 10px;
-    margin-left: 500px;
+    margin-top: 13px;
+    margin-left: auto;
     width: 100px;
+    display: flex;
+    justify-content: center;
 }
 
 .inner-container-user-client input[type="submit"]:hover {

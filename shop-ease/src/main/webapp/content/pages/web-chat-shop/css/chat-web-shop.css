@@ -12,7 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 .main-chat-open {
@@ -36,11 +35,12 @@
 .main-chat-open[type="email"],
 .main-chat-open {
     display: block;
-    margin-bottom: 10px;
 }
 
 .main-chat-open input,
 .main-chat-open textarea {
+	margin-top: 5px;
+	margin-bottom: 10px;
     width: 100%;
     padding: 8px;
     box-sizing: border-box;

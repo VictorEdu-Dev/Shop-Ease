@@ -3,10 +3,10 @@
 body, html {
 	height: 100%;
 	margin: 0;
-    padding: 0;
 }
 
 body {
+	padding-top: 83px;
     background-color: #000;
     background-image: url('/shop-ease/content/resources/images/tecnology.jpg');
     background-position: center;
@@ -15,7 +15,6 @@ body {
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     z-index: -1;
 }
 
@@ -31,93 +30,94 @@ body::before {
     z-index: -1;
 }
 
-.section-container-header {
-	font-family: Arial, sans-serif;
-	flex: 1 0 auto;
-	max-height: 13%;
-}
-
-.section {
-	overflow-y: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    padding: 20px;
-}
-
-.header {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #333;
-    color: white;
-    z-index: 1;
-}
-
-.header {
-	background-color: #333;
-	color: white;
-	padding: 10px 20px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 1;
-	height: 10%;
-}
-
-.title {
-	margin-left: 20px !important;
-	margin-right: 20px !important;
-	
-	color: white;
+.header-main {
+	font-family: Arial, bold;
+	z-index: 2;
 }
 
 .nav-header {
-	margin-right: 20px;
-}
-.nav-header ul {
-	display: flex;
-	justify-content: space-between;
-	list-style-type: none;
-	padding: 0;
-	display: flex;
-	align-items: center;
-}
-
-.nav-header ul li {
-	margin-right: 20px;
+	background: #1f1f1f;
+	border-bottom: 1px solid #515151;
+	color: white;
+    font-size: 12pt;
+    height: 83px;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
-.nav-header ul li:last-child {
+.header-container {
+	height: inherit;
+}
+
+.header-container {
+	display: flex;
+	padding: 0 5rem;
+}
+
+.title {
+	font-size: 20pt;
+	margin: 0;
+	color: #fff;
+	align-content: center;
+}
+
+.navbar-burger {
+    align-items: center;
+    background: 0 0;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 1;
+    margin-left: auto;
+    min-width: 0;
+    outline: none;
+    padding: 0;
+    position: relative;
+    list-style-type: none;
+}
+
+.navbar-burger li {
+	margin-right: 20px;
+}
+
+.navbar-burger li:last-child {
 	margin-right: 0;
 }
 
-.nav-header ul li a {
+.navbar-burger li a {
+	font-weight: 800;
 	color: white;
 	text-decoration: none;
 }
 
-.content {
-	display: flex;
+.navbar-burger li button {
+	border-radius: 10px;
+	border: none;
+	writing-mode: vertical-rl;
+    padding-bottom: 5px;
 }
-	
+
+.sidebar-container {
+	font-family: Arial, bold;
+	z-index: 2;
+}
 
 .sidebar {
+	border: 1px solid #515151;
 	position: fixed;
 	top: 0;
 	right: -200px;
 	width: 200px;
 	height: 100%;
-	background-color: #333;
+	background: #1f1f1f;
 	color: #fff;
 	transition: right 0.3s;
 	padding: 0px;
-	border-radius: 0 10px 10px 0;
+	border-radius: 10px 0 0 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 	z-index: 1;
 }
@@ -143,6 +143,7 @@ body::before {
 	color: #fff;
 	text-decoration: none;
 	font-size: 18px;
+	font-weight: 900;
 }
 
 .sidebar ul li a:hover {

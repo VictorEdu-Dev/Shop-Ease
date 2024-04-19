@@ -11,9 +11,11 @@
 </head>
 <body>
 <jsp:include page="pages/header-footer/header.jsp"></jsp:include>
-    <div class="content-home">
-        <!-- Conteúdo da página principal -->
-    </div>
+    <main class="home-main">
+	    <div class="content-home">
+	        <!-- Conteúdo da página principal -->
+	    </div>
+    </main>
 <jsp:include page="pages/header-footer/footer.jsp"></jsp:include>
 </body>
 </html>
