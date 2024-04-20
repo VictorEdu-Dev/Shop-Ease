@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="com.controller.system.users.client.UserClientParameter"%>
+<%@ page import="com.shopease.controller.system.users.client.UserClientParameter"%>
 
 <!DOCTYPE html>
 <html>
@@ -10,7 +10,7 @@
 <title>Cadastro de produtos</title>
 </head>
 <body>
-<jsp:include page="../header-footer/header.jsp"/>
+<jsp:include page="/WEB-INF/view/header-footer/header.jsp"/>
 <main class="main-register-user-client">
     <section class="container-user-client">
         <div class="inner-container-user-client">
@@ -69,6 +69,6 @@
         </div>
     </section>
 </main>
-<jsp:include page="../header-footer/footer.jsp"></jsp:include>
+<jsp:include page="/WEB-INF/view/header-footer/footer.jsp"></jsp:include>
 </body>
 </html>

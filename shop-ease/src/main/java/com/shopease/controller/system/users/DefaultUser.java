@@ -1,4 +1,4 @@
-package com.controller.system.users;
+package com.shopease.controller.system.users;
 
 public class DefaultUser {
 	private int id;

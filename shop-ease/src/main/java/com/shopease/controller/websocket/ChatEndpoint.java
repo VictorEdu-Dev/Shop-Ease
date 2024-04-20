@@ -1,4 +1,4 @@
-package com.controller.websocket;
+package com.shopease.controller.websocket;
 
 import java.io.IOException;
 import java.util.Collections;

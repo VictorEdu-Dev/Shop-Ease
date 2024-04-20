@@ -1,4 +1,4 @@
-package com.controller.system.users;
+package com.shopease.controller.system.users;
 
 public enum DefaultUserParameter {
 	NAME("name"),

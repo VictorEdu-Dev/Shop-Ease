@@ -1,4 +1,4 @@
-package com.controller.servlets.services;
+package com.shopease.controller.servlets.services;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

@@ -1,4 +1,4 @@
-package com.database.daos;
+package com.shopease.database.daos;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.controller.system.stock.Product;
-import com.database.DatabaseConnection;
+import com.shopease.controller.system.stock.Product;
+import com.shopease.database.DatabaseConnection;
 
 import jakarta.servlet.ServletException;
 

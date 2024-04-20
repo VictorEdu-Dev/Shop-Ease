@@ -1,10 +1,10 @@
-package com.controller.servlets.services.client;
+package com.shopease.controller.servlets.services.client;
 
 import java.util.List;
 
-import com.controller.servlets.services.Service;
-import com.controller.system.users.client.Client;
-import com.database.daos.ClientDAO;
+import com.shopease.controller.servlets.services.Service;
+import com.shopease.controller.system.users.client.Client;
+import com.shopease.database.daos.ClientDAO;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

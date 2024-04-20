@@ -1,6 +1,6 @@
-package com.controller.system.purchase.authenticator;
+package com.shopease.controller.system.purchase.authenticator;
 
-import com.controller.system.users.client.Client;
+import com.shopease.controller.system.users.client.Client;
 
 public class DeliveryAddress {
 	private Client client;

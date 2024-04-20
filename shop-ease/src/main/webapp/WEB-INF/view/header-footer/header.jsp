@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopEase</title>
-    <link rel="stylesheet" type="text/css" href="<%= request.getContextPath()%>/content/pages/header-footer/css/header.css">
-    <script src="<%= request.getContextPath()%>/content/pages/header-footer/js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="<%= request.getContextPath()%>/content/assets/css/header-footer/header.css">
+    <script src="<%= request.getContextPath()%>/content/assets/js/header-footer/common.js"></script>
 </head>
 <body>
 	<header id="header-main" class="header-main">
@@ -19,10 +19,10 @@
 	                <li><a href="sobre.jsp">Sobre</a></li>
 	                <li><a href="contato.jsp">Contato</a></li>
 	                <li><button onclick="toggleSidebar()" id="open-profile-admin-button" class="open-profile-admin-button">
-	    				<img src="<%= request.getContextPath()%>/content/resources/images/profile/icons8-male-user-24.png" alt="profile-icon">
+	    				<img src="<%= request.getContextPath()%>/content/assets/images/profile/icons8-male-user-24.png" alt="profile-icon">
 					</button></li>
 	                <li><button onclick="toggleSidebar()" id="open-sidebar-button" class="open-sidebar-button">
-	    				<img src="<%= request.getContextPath()%>/content/resources/images/icons8-menu-alt.svg" alt="menu-icon">
+	    				<img src="<%= request.getContextPath()%>/content/assets/images/icons8-menu-alt.svg" alt="menu-icon">
 					</button></li>
 	        	</ul>
 	    	</div>
@@ -35,7 +35,7 @@
 	            <h2>Menu</h2>
 	            <ul>
 	            	<li><a href="<%= request.getContextPath()%>/content/pages/login-page-admin/system-admin/system-admin-profile/admin-profile.jsp">ShopAdmin</a></li>
-	                <li><a href="<%= request.getContextPath()%>/content/pages/login-page-admin/login.jsp">Login Admin</a></li>
+	                <li><a href="<%= request.getContextPath()%>/authLogin">Login Admin</a></li>
 	                <li><a href="/shop-ease/handler?param=client.ListClient">Lista de clientes</a></li>
 	                <li><a href="<%= request.getContextPath()%>/content/pages/register-user-client/register-user-client.jsp">Cadastro de clientes</a></li>
 	                <li><a href="<%= request.getContextPath()%>/content/pages/register-product/register-products.jsp">Cadastro de produtos</a></li>

@@ -1,8 +1,8 @@
-package com.controller.system.purchase.authenticator;
+package com.shopease.controller.system.purchase.authenticator;
 
 import java.util.List;
 
-import com.controller.system.stock.Product;
+import com.shopease.controller.system.stock.Product;
 
 public class OrderProcessing {
 	private List<Product> products;

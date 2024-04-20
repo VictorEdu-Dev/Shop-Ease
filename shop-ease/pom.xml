@@ -104,12 +104,6 @@
 	    <artifactId>spring-oxm</artifactId>
 	    <version>6.1.6</version>
 	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-struts -->
-	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-struts</artifactId>
-	    <version>3.2.18.RELEASE</version>
-	</dependency>
 	<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
 	<dependency>
 	    <groupId>org.springframework</groupId>

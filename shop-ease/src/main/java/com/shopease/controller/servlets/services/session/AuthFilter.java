@@ -1,4 +1,4 @@
-package com.controller.servlets.services.session;
+package com.shopease.controller.servlets.services.session;
 
 import java.io.IOException;
 
@@ -13,22 +13,20 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
-@WebFilter(filterName = "AuthFilter", urlPatterns = {
-		"/content/pages/register-product/register-products.jsp",
-		"/content/pages/register-user-client/register-user-client.jsp",
-		"/content/pages/web-chat-shop/web-chat-shop.jsp",
-		"/content/handler",
-		"/content/handler-no-dispatcher",
-		"/content/pages/login-page-admin/system-admin/system-admin-profile/admin-profile.jsp"
-		})
+//@WebFilter(filterName = "AuthFilter", urlPatterns = {
+//		"/content/pages/register-product/register-products.jsp",
+//		"/content/pages/register-user-client/register-user-client.jsp",
+//		"/content/pages/web-chat-shop/web-chat-shop.jsp",
+//		"/content/handler",
+//		"/content/handler-no-dispatcher",
+//		"/content/pages/login-page-admin/system-admin/system-admin-profile/admin-profile.jsp"
+//		})
 public class AuthFilter implements Filter {
 
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
             throws IOException, ServletException {
     	HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) res;
-        
-        System.out.println("Testou solic");
 
         HttpSession session = request.getSession(false);
         

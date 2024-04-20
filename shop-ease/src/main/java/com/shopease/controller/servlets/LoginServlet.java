@@ -1,10 +1,10 @@
-package com.controller.servlets;
+package com.shopease.controller.servlets;
 
 import java.io.IOException;
 
-import com.controller.system.users.DefaultUser;
-import com.controller.system.users.DefaultUserParameter;
-import com.database.daos.AuthSessionDAO;
+import com.shopease.controller.system.users.DefaultUser;
+import com.shopease.controller.system.users.DefaultUserParameter;
+import com.shopease.database.daos.AuthSessionDAO;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

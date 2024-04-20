@@ -1,12 +1,12 @@
-package com.database.daos;
+package com.shopease.database.daos;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.controller.system.users.DefaultUser;
-import com.database.DatabaseConnection;
+import com.shopease.controller.system.users.DefaultUser;
+import com.shopease.database.DatabaseConnection;
 
 public class AuthSessionDAO {
 	private static final String table = "data_users";

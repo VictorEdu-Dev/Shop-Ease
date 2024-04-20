@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="<%= request.getContextPath()%>/content/pages/header-footer/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="<%= request.getContextPath()%>/content/assets/css/header-footer/footer.css">
 	<title>ShopEaser</title>
 </head>
 <body>

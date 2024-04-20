@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="java.util.*, com.database.daos.*,com.controller.system.users.*"%>
+<%@ page import="java.util.*,com.shopease.database.daos.*,com.shopease.controller.system.users.*"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>

@@ -1,12 +1,12 @@
-package com.controller.system.purchase;
+package com.shopease.controller.system.purchase;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.controller.system.purchase.authenticator.OrderProcessing;
-import com.controller.system.stock.Product;
+import com.shopease.controller.system.purchase.authenticator.OrderProcessing;
+import com.shopease.controller.system.stock.Product;
 
 public final class ShoppingCart {
 	private List<Product> listProduct;

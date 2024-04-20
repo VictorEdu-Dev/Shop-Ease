@@ -1,5 +1,5 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
-<%@ page import="com.controller.servlets.GeneralServlet"%>
+<%@ page import="com.shopease.controller.servlets.GeneralServlet"%>
 
 <!DOCTYPE html>
 <html>
@@ -11,7 +11,7 @@
 	<title>Cadastro de produtos</title>
 </head>
 <body>
-	<jsp:include page="../header-footer/header.jsp"></jsp:include>
+	<jsp:include page="/WEB-INF/view/header-footer/header.jsp"></jsp:include>
     <main class="main-product-register">
     	<section class="body-product-register">
 	        <div class="inner-container-product-register">
@@ -61,6 +61,6 @@
 	        </div>
         </section>
     </main>
-	<jsp:include page="../header-footer/footer.jsp"></jsp:include>
+	<jsp:include page="/WEB-INF/view/header-footer/footer.jsp"></jsp:include>
 </body>
 </html>

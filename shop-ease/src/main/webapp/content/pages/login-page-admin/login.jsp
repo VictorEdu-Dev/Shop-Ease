@@ -5,15 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Login</title>
-<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="<%= request.getContextPath()%>/content/pages/login-page-admin/css/style.css" type="text/css">
 </head>
 <body>
-	<jsp:include page="../header-footer/header.jsp"></jsp:include>
+	<jsp:include page="/WEB-INF/view/header-footer/header.jsp"></jsp:include>
 	<main class="body-form-main">
 		<section class="body-form-section">
 			<div class="form-wrapper">
 				<h2>Entrar</h2>
-				<form action="/shop-ease/login" method="POST">
+				<form action="<%= request.getContextPath()%>/takeLogin" method="POST">
 					<div class="form-control">
 						<label>Nome de usuário</label> 
 						<input type="text" name="username" id="username" required>
@@ -37,6 +37,6 @@
 			</div>
 		</section>
 	</main>
-	<jsp:include page="../header-footer/footer.jsp"></jsp:include>
+	<jsp:include page="/WEB-INF/view/header-footer/footer.jsp"></jsp:include>
 </body>
 </html>

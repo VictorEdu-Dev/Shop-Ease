@@ -1,6 +1,6 @@
-package com.controller.system.users.admin;
+package com.shopease.controller.system.users.admin;
 
-import com.controller.system.users.DefaultUser;
+import com.shopease.controller.system.users.DefaultUser;
 
 public class AdminUser extends DefaultUser {
 	private String uniqueIdentifier;

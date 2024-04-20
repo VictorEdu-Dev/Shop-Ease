@@ -1,10 +1,10 @@
-package com.controller.servlets;
+package com.shopease.controller.servlets;
 
 import java.io.IOException;
 
 import javax.websocket.server.ServerContainer;
 
-import com.controller.websocket.ChatEndpoint;
+import com.shopease.controller.websocket.ChatEndpoint;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

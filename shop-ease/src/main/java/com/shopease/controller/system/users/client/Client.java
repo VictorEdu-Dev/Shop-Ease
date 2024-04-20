@@ -1,6 +1,6 @@
-package com.controller.system.users.client;
+package com.shopease.controller.system.users.client;
 
-import com.controller.system.users.DefaultUser;
+import com.shopease.controller.system.users.DefaultUser;
 
 public class Client extends DefaultUser {
 	private int id;

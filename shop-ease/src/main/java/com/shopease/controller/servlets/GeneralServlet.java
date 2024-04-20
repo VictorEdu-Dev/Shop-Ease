@@ -1,9 +1,9 @@
-package com.controller.servlets;
+package com.shopease.controller.servlets;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 
-import com.controller.servlets.services.Service;
+import com.shopease.controller.servlets.services.Service;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

@@ -1,4 +1,4 @@
-package com.controller.system.users.client;
+package com.shopease.controller.system.users.client;
 
 public enum UserClientParameter {
 	

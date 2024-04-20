@@ -7,7 +7,7 @@
     <title>Perfil do Administrador</title>
 </head>
 <body>
-<jsp:include page="../../../header-footer/header.jsp"></jsp:include>
+<jsp:include page="/WEB-INF/view/header-footer/header.jsp"></jsp:include>
 <div id="profile-container" class="profile-container">
     <!-- Perfil do administrador -->
     <section id="profile" class="profile-section">
@@ -26,6 +26,6 @@
         </div>
     </section>
 </div>
-<jsp:include page="../../../header-footer/footer.jsp"></jsp:include>
+<jsp:include page="/WEB-INF/view/header-footer/footer.jsp"></jsp:include>
 </body>
 </html>

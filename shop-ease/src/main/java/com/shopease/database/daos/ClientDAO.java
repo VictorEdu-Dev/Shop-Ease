@@ -1,4 +1,4 @@
-package com.database.daos;
+package com.shopease.database.daos;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,9 +7,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.controller.system.users.client.Client;
-import com.controller.system.users.client.UserClientParameter;
-import com.database.DatabaseConnection;
+import com.shopease.controller.system.users.client.Client;
+import com.shopease.controller.system.users.client.UserClientParameter;
+import com.shopease.database.DatabaseConnection;
 
 import jakarta.servlet.ServletException;
 

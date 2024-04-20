@@ -1,10 +1,10 @@
-package com.controller.servlets.services.product;
+package com.shopease.controller.servlets.services.product;
 
 import java.io.IOException;
 
-import com.controller.servlets.services.Service;
-import com.controller.system.stock.Product;
-import com.database.daos.ProductDAO;
+import com.shopease.controller.servlets.services.Service;
+import com.shopease.controller.system.stock.Product;
+import com.shopease.database.daos.ProductDAO;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
