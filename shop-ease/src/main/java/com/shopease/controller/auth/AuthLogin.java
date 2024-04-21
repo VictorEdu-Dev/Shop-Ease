@@ -1,8 +1,8 @@
 package com.shopease.controller.auth;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.shopease.controller.auth.enums.Action;
 import com.shopease.controller.auth.enums.Constant;
@@ -14,7 +14,7 @@ import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class AuthLogin {
-	@RequestMapping(value = Action.AUTH_LOGIN, method = RequestMethod.GET) 
+	@GetMapping(Action.AUTH_LOGIN) 
 	public String form() {
 		return Path.LOGIN_PAGE_ADMIN.getContent();
 	}
@@ -35,10 +35,15 @@ public class AuthLogin {
 		}
 	}
 	
-	@RequestMapping(value = Action.SYSTEM_ADMIN, method = RequestMethod.GET)
+	@GetMapping(Action.SYSTEM_ADMIN)
 	public String enterAdmin() {
 		return Path.SYSTEM_ADMIN_PROFILE.getContent();
 	}
 	
+	@GetMapping(Action.REQ_LOGOUT_ADMIN)
+	public String logout(HttpSession session) {
+		session.invalidate();
+		return Action.REDIRECT_AUTHLOGIN;
+	}
 	
 }
