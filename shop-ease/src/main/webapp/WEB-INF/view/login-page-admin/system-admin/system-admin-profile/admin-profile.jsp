@@ -19,8 +19,8 @@
 		    		<li><a href="#">Perfil</a></li>
 		    		<li><a href="#" onclick="loadPage('${pageContext.request.contextPath}/reqClientRegisterArea')">Clientes</a></li>
 		    		<li><a href="#" onclick="loadPage('${pageContext.request.contextPath}/reqProductRegisterArea')">Estoque</a></li>
-		    		<li><a href="#">Vendas</a></li>
-		    		<li><a href="#">Chat online</a></li>
+		    		<li><a href="#" onclick="loadPage('${pageContext.request.contextPath}/reqSalesArea')">Vendas</a></li>
+		    		<li><a href="#" onclick="loadPage('${pageContext.request.contextPath}/reqChatTeamArea')">Chat online</a></li>
 		    		<li><a href="#">Configurações</a></li>
 	    		</ul>
 	    	</nav>
