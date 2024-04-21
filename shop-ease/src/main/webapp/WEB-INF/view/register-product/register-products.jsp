@@ -6,12 +6,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/register-product-style.css" type="text/css">
-	<link rel="stylesheet" href="modal/css/message.css" type="text/css">
+	<link rel="stylesheet" href="<%= request.getContextPath()%>/content/assets/css/register-product/register-product-style.css" type="text/css">
+	<link rel="stylesheet" href="<%= request.getContextPath()%>/content/assets/css/register-product/modal/css/message.css" type="text/css">
 	<title>Cadastro de produtos</title>
 </head>
 <body>
-	<jsp:include page="/WEB-INF/view/header-footer/header.jsp"></jsp:include>
     <main class="main-product-register">
     	<section class="body-product-register">
 	        <div class="inner-container-product-register">
@@ -61,6 +60,5 @@
 	        </div>
         </section>
     </main>
-	<jsp:include page="/WEB-INF/view/header-footer/footer.jsp"></jsp:include>
 </body>
 </html>

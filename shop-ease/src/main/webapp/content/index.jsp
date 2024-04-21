@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0">
     <title>ShopEase</title>
-    <link href="assets/css/home-page.css" rel="stylesheet" type="text/css">
+    <link href="<%= request.getContextPath()%>/content/assets/css/home-page.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <jsp:include page="/WEB-INF/view/header-footer/header.jsp"></jsp:include>

@@ -9,25 +9,18 @@ import com.shopease.controller.system.users.DefaultUser;
 import com.shopease.database.DatabaseConnection;
 
 public class AuthSessionDAO {
-	private static final String table = "data_users";
+	private static final String table = "admin_user_system";
 	
 	public static boolean subscribeUser(DefaultUser user) {
-		DefaultUser c = new DefaultUser();
-		c.setName("Victor Eduardo Pita Campos");
-		c.setUserName("victoredubr");
-		c.setEmail("admeduardocampos@gmail.com");
-		c.setPhoneNumber("88988750878");
-		c.setPassword("Vv,11111");
 		
-		
-		if(!validateCredencials(c)) {
+		if(!validateCredencials(user)) {
 			try(Connection conn = DatabaseConnection.getConnection();
 		             PreparedStatement stmt = conn.prepareStatement("INSERT INTO " + table +" (name, username, email, phone_number, password) VALUES (?, ?, ?, ?, ?)")) {
-				stmt.setString(1, c.getName());
-				stmt.setString(2, c.getUserName());
-				stmt.setString(3, c.getEmail());
-				stmt.setString(4, c.getPhoneNumber());
-				stmt.setString(5, c.getPassword());
+				stmt.setString(1, user.getName());
+				stmt.setString(2, user.getUsername());
+				stmt.setString(3, user.getEmail());
+				stmt.setString(4, user.getPhoneNumber());
+				stmt.setString(5, user.getPassword());
 				int succes = stmt.executeUpdate();
 				
 				if(succes > 0) {
@@ -47,7 +40,7 @@ public class AuthSessionDAO {
 	public static boolean validateCredencials(DefaultUser user) {
 	     try (Connection conn = DatabaseConnection.getConnection();
 	             PreparedStatement stmt = conn.prepareStatement("SELECT * FROM "+ table +" WHERE username = ? AND password = ?")) {
-	         stmt.setString(1, user.getUserName());
+	         stmt.setString(1, user.getUsername());
 	         stmt.setString(2, user.getPassword());
 	         try (ResultSet rs = stmt.executeQuery()) {
 	             return rs.next();

@@ -16,7 +16,7 @@ import com.shopease.interceptor.logging.LoggingInterceptor;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.shopease.controller.auth")
+@ComponentScan(basePackages = "com.shopease.controller")
 public class WebConfig implements WebMvcConfigurer {
 	
 	@Override
@@ -32,19 +32,32 @@ public class WebConfig implements WebMvcConfigurer {
 	
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		System.out.println("Passou por addResourceHandlers");
-	    registry.addResourceHandler("/content/**")
-	            .addResourceLocations("/content/");
+	    registry.addResourceHandler("/content/assets/**")
+	    .addResourceLocations("/content/assets/");
 	}
 
 	
 	@Bean
-	public ViewResolver viewResolver() {
+	public ViewResolver internalViewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-		resolver.setPrefix("/content/pages/");
+		resolver.setPrefix("/WEB-INF/view/");
 		resolver.setSuffix(".jsp");
+		resolver.setOrder(1);
 		resolver.setViewClass(JstlView.class);
 		
 		return resolver;
 	}
+	
+	@Bean
+	public ViewResolver externalViewResolver() {
+		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+		resolver.setPrefix("/");
+		resolver.setSuffix(".jsp");
+		resolver.setOrder(2);
+		resolver.setViewClass(JstlView.class);
+		
+		return resolver;
+	}
+	
+	
 }

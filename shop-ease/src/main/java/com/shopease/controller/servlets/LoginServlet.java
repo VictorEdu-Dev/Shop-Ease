@@ -20,14 +20,14 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		DefaultUser user = new DefaultUser();
-		user.setUserName(request.getParameter(DefaultUserParameter.USERNAME.getContent()));	 
+		user.setUsername(request.getParameter(DefaultUserParameter.USERNAME.getContent()));	 
 		user.setPassword(request.getParameter(DefaultUserParameter.PASSWORD.getContent()));
 		
-		System.out.println(user.getUserName());
+		System.out.println(user.getUsername());
 
 		if (AuthSessionDAO.validateCredencials(user)) {
 			HttpSession session = request.getSession();
-			session.setAttribute("username", user.getUserName());
+			session.setAttribute("username", user.getUsername());
 
 			session.setMaxInactiveInterval(60 * 60);
 

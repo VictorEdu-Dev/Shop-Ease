@@ -18,7 +18,7 @@
 	            	<li><a href="/shop-ease/content/index.jsp">Home</a></li>
 	                <li><a href="sobre.jsp">Sobre</a></li>
 	                <li><a href="contato.jsp">Contato</a></li>
-	                <li><button onclick="toggleSidebar()" id="open-profile-admin-button" class="open-profile-admin-button">
+	                <li><button onclick="window.location.href='<%= request.getContextPath()%>/systemAdmin';" id="open-profile-admin-button" class="open-profile-admin-button">
 	    				<img src="<%= request.getContextPath()%>/content/assets/images/profile/icons8-male-user-24.png" alt="profile-icon">
 					</button></li>
 	                <li><button onclick="toggleSidebar()" id="open-sidebar-button" class="open-sidebar-button">
@@ -34,7 +34,7 @@
 	            <span class="sidebar-close" onclick="toggleSidebar()">x</span>
 	            <h2>Menu</h2>
 	            <ul>
-	            	<li><a href="<%= request.getContextPath()%>/content/pages/login-page-admin/system-admin/system-admin-profile/admin-profile.jsp">ShopAdmin</a></li>
+	            	<li><a href="<%= request.getContextPath()%>/systemAdmin">ShopAdmin</a></li>
 	                <li><a href="<%= request.getContextPath()%>/authLogin">Login Admin</a></li>
 	                <li><a href="/shop-ease/handler?param=client.ListClient">Lista de clientes</a></li>
 	                <li><a href="<%= request.getContextPath()%>/content/pages/register-user-client/register-user-client.jsp">Cadastro de clientes</a></li>

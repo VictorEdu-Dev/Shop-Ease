@@ -5,12 +5,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="css/register-user-client-styles.css" type="text/css">
-<link rel="stylesheet" href="modal/css/message.css" type="text/css">
+<link rel="stylesheet" href="<%= request.getContextPath()%>/content/assets/css/register-user-client/register-user-client-styles.css" type="text/css">
+<link rel="stylesheet" href="<%= request.getContextPath()%>/content/assets/register-user-client/modal/css/message.css" type="text/css">
 <title>Cadastro de produtos</title>
 </head>
 <body>
-<jsp:include page="/WEB-INF/view/header-footer/header.jsp"/>
 <main class="main-register-user-client">
     <section class="container-user-client">
         <div class="inner-container-user-client">
@@ -62,13 +61,12 @@
                         <span class="close" onclick="closeMessage()">&times;</span>
                         <h2>Mensagem</h2>
                         <p>Cadastro realizado!</p>
-                        <script src="modal/js/message.js"></script>
+                        <script src="<c:url value='/content/assets/js/register-user-client/jsRegister.js' />"></script>
                     </div>
                 </div>
             </form>
         </div>
     </section>
 </main>
-<jsp:include page="/WEB-INF/view/header-footer/footer.jsp"></jsp:include>
 </body>
 </html>

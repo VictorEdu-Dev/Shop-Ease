@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Login</title>
-<link rel="stylesheet" href="<%= request.getContextPath()%>/content/pages/login-page-admin/css/style.css" type="text/css">
+<link rel="stylesheet" href="<%= request.getContextPath()%>/content/assets/css/login-page-admin/style.css" type="text/css">
 </head>
 <body>
 	<jsp:include page="/WEB-INF/view/header-footer/header.jsp"></jsp:include>
