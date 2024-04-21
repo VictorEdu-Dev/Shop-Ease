@@ -20,4 +20,9 @@ public class AdminSystem {
 		return Path.REGISTER_PRODUCT_AREA.getContent();
 	}
 	
+	@GetMapping(Action.REQ_CHAT_TEAM_AREA)
+	public String chatTeamArea() {
+		return Path.CHAT_TEAM_AREA.getContent();
+	}
+	
 }
