@@ -1,13 +1,14 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
 <%@ page import="com.shopease.controller.servlets.GeneralServlet"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="<%= request.getContextPath()%>/content/assets/css/register-product/register-product-style.css" type="text/css">
-	<link rel="stylesheet" href="<%= request.getContextPath()%>/content/assets/css/register-product/modal/css/message.css" type="text/css">
+	<link rel="stylesheet" href="<c:url value='/content/assets/css/register-product/register-product-style.css' />" type="text/css">
+	<link rel="stylesheet" href="<c:url value='/content/assets/css/register-product/modal/message.css' />" type="text/css">
 	<title>Cadastro de produtos</title>
 </head>
 <body>
@@ -53,7 +54,7 @@
 	                        <span class="close" onclick="closeMessage()">&times;</span>
 	                        <h2>Mensagem</h2>
 	                        <p>Cadastro realizado!</p>
-	                        <script src="modal/js/message.js"></script>
+	                        <script type="text/javascript" src="<c:url value='/content/assets/js/register-product/modal/message.js' />"></script>
 	                    </div>
 	                </div>
 	            </form>
