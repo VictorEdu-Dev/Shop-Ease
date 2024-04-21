@@ -9,7 +9,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="<c:url value='/content/assets/css/register-product/register-product-style.css' />" type="text/css">
 	<link rel="stylesheet" href="<c:url value='/content/assets/css/register-product/modal/message.css' />" type="text/css">
-	<title>Cadastro de produtos</title>
 </head>
 <body>
     <main class="main-product-register">

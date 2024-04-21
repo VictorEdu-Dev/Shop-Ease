@@ -6,9 +6,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="<%= request.getContextPath()%>/content/assets/css/register-user-client/register-user-client-styles.css" type="text/css">
-<link rel="stylesheet" href="<%= request.getContextPath()%>/content/assets/css/register-user-client/modal/message.css" type="text/css">
-<title>Cadastro de produtos</title>
+<link rel="stylesheet" href="<c:url value='/content/assets/css/register-user-client/register-user-client-styles.css' />" type="text/css">
+<link rel="stylesheet" href="<c:url value='/content/assets/css/register-user-client/modal/message.css' />" type="text/css">
 </head>
 <body>
 <main class="main-register-user-client">
