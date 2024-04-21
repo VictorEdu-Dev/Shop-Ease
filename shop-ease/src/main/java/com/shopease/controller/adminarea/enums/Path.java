@@ -2,7 +2,8 @@ package com.shopease.controller.adminarea.enums;
 
 public enum Path {
 	REGISTER_CLIENT_AREA("register-user-client/register-user-client"),
-	REGISTER_PRODUCT_AREA("register-product/register-products");
+	REGISTER_PRODUCT_AREA("register-product/register-products"), 
+	CHAT_TEAM_AREA("web-chat-team/web-chat-team");
 	
 	public final String path;
 	
