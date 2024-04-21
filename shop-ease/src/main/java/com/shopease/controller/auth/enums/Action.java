@@ -8,5 +8,6 @@ public class Action {
 	// hrefs
 	public static final String AUTH_LOGIN = "/authLogin";
 	public static final String SYSTEM_ADMIN = "/systemAdmin";
+	public static final String REQ_LOGOUT_ADMIN = "/reqLogoutAdmin";
 	
 }

@@ -21,6 +21,7 @@
 		    		<li><a href="#" onclick="loadPage('${pageContext.request.contextPath}/reqProductRegisterArea')">Estoque</a></li>
 		    		<li><a href="#" onclick="loadPage('${pageContext.request.contextPath}/reqSalesArea')">Vendas</a></li>
 		    		<li><a href="#" onclick="loadPage('${pageContext.request.contextPath}/reqChatTeamArea')">Chat online</a></li>
+		    		<li><a href="<c:url value='/reqLogoutAdmin' />">Sair</a></li>
 		    		<li><a href="#">Configurações</a></li>
 	    		</ul>
 	    	</nav>
