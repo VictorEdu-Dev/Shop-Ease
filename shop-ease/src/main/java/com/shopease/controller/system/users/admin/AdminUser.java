@@ -6,7 +6,7 @@ public class AdminUser extends DefaultUser {
 	private String uniqueIdentifier;
 	
 	public AdminUser() {
-
+		
 	}
 	
 	public AdminUser(String uniqueIdentifier) {

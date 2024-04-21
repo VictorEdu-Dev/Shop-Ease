@@ -7,7 +7,7 @@ public class Client extends DefaultUser {
 	private String name;
 	private String address;
 	private String homeNumber;
-	private String bairro;
+	private String neighborhood;
 	private String city;
 	private String state;
 	private String country;
@@ -16,18 +16,18 @@ public class Client extends DefaultUser {
 	private String phoneNumber;
 	
 	public Client() {
+		
 	}
 	
-	public Client(int id, String name, String address, 
-			String homeNumber, String bairro, String city, 
+	public Client(String name, String address, 
+			String homeNumber, String neighborhood, String city, 
 			String state, String country, String email, 
 			String phoneNumber) {
 		super();
-		this.id = id;
 		this.name = name;
 		this.address = address;
 		this.homeNumber = homeNumber;
-		this.bairro = bairro;
+		this.neighborhood = neighborhood;
 		this.city = city;
 		this.state = state;
 		this.country = country;
@@ -67,12 +67,12 @@ public class Client extends DefaultUser {
 		this.homeNumber = homeNumber;
 	}
 
-	public String getBairro() {
-		return bairro;
+	public String getNeighborhood() {
+		return neighborhood;
 	}
 
-	public void setBairro(String bairro) {
-		this.bairro = bairro;
+	public void setNeighborhood(String neighborhood) {
+		this.neighborhood = neighborhood;
 	}
 
 	public String getCity() {
@@ -118,7 +118,7 @@ public class Client extends DefaultUser {
 	@Override
 	public String toString() {
 		return "[ " + "Name=" + name + ", address=" + address + ", homeNumber=" + homeNumber
-				+ ", bairro=" + bairro + ", city=" + city + ", state=" + state + ", country=" + country + ", email="
+				+ ", bairro=" + neighborhood + ", city=" + city + ", state=" + state + ", country=" + country + ", email="
 				+ email + ", phoneNumber=" + phoneNumber  + " ]";
 	}
 }

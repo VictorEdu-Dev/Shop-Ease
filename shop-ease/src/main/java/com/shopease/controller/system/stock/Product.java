@@ -9,7 +9,7 @@ public class Product implements Serializable {
 	private String category;
 	private String description; 
 	private String name;
-	private String brand; // marca
+	private String brand;
 	
 	private String manufacturingDate;
 	private String expirationDate;
@@ -19,6 +19,20 @@ public class Product implements Serializable {
 	public Product() {
 		
 	}
+
+	public Product(String category, String description, String name, String brand, String manufacturingDate,
+			String expirationDate, double price) {
+		super();
+		this.category = category;
+		this.description = description;
+		this.name = name;
+		this.brand = brand;
+		this.manufacturingDate = manufacturingDate;
+		this.expirationDate = expirationDate;
+		this.price = price;
+	}
+
+
 
 	public String getId() {
 		return id;
