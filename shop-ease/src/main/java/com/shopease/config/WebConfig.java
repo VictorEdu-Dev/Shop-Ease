@@ -1,5 +1,9 @@
 package com.shopease.config;
 
+
+import javax.sql.DataSource;
+
+import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -59,5 +63,14 @@ public class WebConfig implements WebMvcConfigurer {
 		return resolver;
 	}
 	
+	@Bean
+	public DataSource mysqlDataSource() {
+		BasicDataSource dataSource = new BasicDataSource();
+		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/shop_ease_database");
+		dataSource.setUsername("root");
+		dataSource.setPassword("Vv_vepc6374@,11111");
+		return dataSource;
+	}
 	
 }
