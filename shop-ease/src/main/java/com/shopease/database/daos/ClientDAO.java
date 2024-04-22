@@ -24,7 +24,7 @@ public class ClientDAO {
 	            pstmt.setString(2, client.getEmail());
 	            pstmt.setString(3, client.getAddress());
 	            pstmt.setString(4, client.getHomeNumber());
-	            pstmt.setString(5, client.getBairro());
+	          //  pstmt.setString(5, client.getBairro());
 	            pstmt.setString(6, client.getCity());
 	            pstmt.setString(7, client.getState());
 	            pstmt.setString(8, client.getCountry());
