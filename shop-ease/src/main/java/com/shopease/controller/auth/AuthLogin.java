@@ -1,5 +1,7 @@
 package com.shopease.controller.auth;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,28 +9,32 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.shopease.controller.auth.enums.Action;
 import com.shopease.controller.auth.enums.Constant;
 import com.shopease.controller.auth.enums.Path;
-import com.shopease.controller.system.users.DefaultUser;
-import com.shopease.database.daos.AuthSessionDAO;
+import com.shopease.persistence.model.admin.AdminUser;
+import com.shopease.persistence.repository.CrudRepository;
 
 import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class AuthLogin {
+	
+	private CrudRepository<AdminUser, String, Object> authSess;
+	
+	@Autowired
+	public AuthLogin(@Qualifier("jpaAuthSessionDAO") CrudRepository<AdminUser, String, Object> authSess) {
+		this.authSess = authSess;
+	}
+
 	@GetMapping(Action.AUTH_LOGIN) 
 	public String form() {
 		return Path.LOGIN_PAGE_ADMIN.getContent();
 	}
 
 	@RequestMapping(Action.TAKE_LOGIN)
-	public String takeLogin(DefaultUser user, HttpSession session) {
-		boolean isValid = AuthSessionDAO.validateCredencials(user);
-		System.out.println(user.getUsername());
-		System.out.println(user.getPassword());
-		
-		if(isValid) {
+	public String takeLogin(AdminUser user, HttpSession session) {
+		if(session.getAttribute(Constant.ATRIBUTE_SESSION.getContent()) != null) {
+			return Path.HOME_PAGE_DEFAULT.getContent();
+		} else if(authSess.findByObject(user) != null) {
 			session.setAttribute(Constant.ATRIBUTE_SESSION.getContent(), user);
-			session.setMaxInactiveInterval(60 * 120);
-			
 			return Path.HOME_PAGE_DEFAULT.getContent();
 		} else {
 			return Action.REDIRECT_AUTHLOGIN;
