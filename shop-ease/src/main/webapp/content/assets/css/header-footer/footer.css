@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.footer-main {
+	padding: 1rem 1rem 1rem;
+    background: #1f1f1f;
+    z-index: 1;
+    border-top: 1px solid #515151;
+}
+
+.container-footer {
+	width: 100%;
+	
+}
+
+.footer-copy p {
+	color: white;
+    text-align: center;
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	text-align: center;
+}
