@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="com.shopease.controller.system.users.client.UserClientParameter"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
@@ -7,15 +6,17 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="<c:url value='/content/assets/css/register-user-client/register-user-client-styles.css' />" type="text/css">
+<link rel="stylesheet" href="<c:url value='/content/assets/css/register-user-client/view-list-client-styles.css' />" type="text/css">
 <link rel="stylesheet" href="<c:url value='/content/assets/css/register-user-client/modal/message.css' />" type="text/css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-<main class="main-register-user-client">
+<main class="main-user-client">
     <section class="container-user-client">
         <div class="inner-container-user-client">
             <h2 class="title-user-client">Cadastrar cliente</h2>
 			<!-- Servlet de destino -->
-            <form action="/shop-ease/handler-no-dispatcher" method="POST" class="form">
+            <form action="<c:url value='/reqSubmitClient' />" method="POST" class="form">
                 <input type="hidden" id="siteId" name="param" value="client.RegisterClient">
                 <div class="form-group">
                     <label for="name">Nome</label>
@@ -27,11 +28,11 @@
                 </div>
                 <div class="form-group">
                     <label for="home_number">Nº</label>
-                    <input type="text" id="home-number" name="<%= UserClientParameter.HOMENUMBER.getContent()%>" required>
+                    <input type="text" id="home_number" name="home_number" required>
                 </div>
                 <div class="form-group">
-                    <label for="bairro">Bairro</label>
-                    <input type="text" id="bairro" name="bairro" required>
+                    <label for="neighborhood">Bairro</label>
+                    <input type="text" id="neighborhood" name="neighborhood" required>
                 </div>
                 <div class="form-group">
                     <label for="city">Cidade</label>
@@ -51,7 +52,7 @@
                 </div>
                 <div class="form-group">
                     <label for="phone_number">Telefone</label>
-                    <input type="text" id="phone-number" name="<%= UserClientParameter.PHONENUMBER.getContent()%>" required>
+                    <input type="text" id="phone_number" name="phone_number" required>
                 </div>
                 <div class="form-group">
                     <input type="submit" id="submitButton" value="Enviar">
@@ -66,6 +67,16 @@
                 </div>
             </form>
         </div>
+    </section>
+    <section class="view-client-list">
+    	<div class="view-container-list">
+    		<button id="loadList" onclick="loadListView('${pageContext.request.contextPath}/reqLoadListClient')">Carregar lista</button>
+    		<button id="loadList" onclick="loadListView('${pageContext.request.contextPath}/reqEditLine')">Editar linha</button>
+    		<button id="loadList" onclick="loadListView('${pageContext.request.contextPath}/reqDeleteLine')">Deletar linha</button>
+    		<div class="table-view-container" id="table-view-container">
+	    		
+			</div>
+    	</div>
     </section>
 </main>
 </body>

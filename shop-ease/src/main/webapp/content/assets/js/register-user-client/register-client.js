@@ -1,4 +1,6 @@
-document.getElementById('registerForm').addEventListener('submit', function() {
-    var form = document.getElementById('registerForm');
-});
-
+function loadList() {
+    $.ajax({
+        type: "GET",
+        url: "${pageContext.request.contextPath}/reqLoadListClient",
+    });
+}

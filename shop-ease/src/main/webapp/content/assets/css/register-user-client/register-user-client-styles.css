@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
-.main-register-user-client {
-	flex: 1;
+.main-user-client {
+    flex-direction: row;
+    display: flex;
+    width: auto;
+    height: auto;
 }
 
 .container-user-client {
@@ -9,6 +12,8 @@
     justify-content: center;
     height: auto;
     width: auto;
+    margin-left: 10px;
+    margin-right: 5px;
 }
 
 .inner-container-user-client {
