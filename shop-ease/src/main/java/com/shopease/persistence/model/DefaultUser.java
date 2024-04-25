@@ -1,6 +1,6 @@
-package com.shopease.controller.system.users;
+package com.shopease.persistence.model;
 
-public class DefaultUser {
+public abstract class DefaultUser {	
 	private int id;
 	private String name;
 	private String username;
