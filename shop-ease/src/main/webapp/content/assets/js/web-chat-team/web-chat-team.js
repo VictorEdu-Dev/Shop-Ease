@@ -1,12 +1,27 @@
-var socket = new WebSocket("ws://localhost:8080/shop-ease/content/chat");
+var socket = new WebSocket("ws://localhost:8080/chat");
+var chatLog = document.getElementById("chat-log");
 
-        socket.onmessage = function(event) {
-            var message = event.data;
-            document.getElementById("chatArea").innerHTML += "<p>" + message + "</p>";
-        };
+socket.onopen = function(event) {
+    console.log("Conexão WebSocket estabelecida.");
+};
 
-        function sendMessage() {
-            var message = document.getElementById("message").value;
-            socket.send(message);
-            document.getElementById("message").value = "";
-        }
+socket.onmessage = function(event) {
+    var message = JSON.parse(event.data);
+    var chatMessage = document.createElement("div");
+    chatMessage.textContent = message.sender + ": " + message.text;
+    chatLog.appendChild(chatMessage);
+};
+
+socket.onclose = function(event) {
+    console.log("Conexão WebSocket fechada.");
+};
+
+function sendMessage() {
+    var username = document.getElementById("username").value;
+    var messageText = document.getElementById("message").value;
+    var message = {
+        sender: username,
+        text: messageText
+    };
+    socket.send(JSON.stringify(message));
+}
