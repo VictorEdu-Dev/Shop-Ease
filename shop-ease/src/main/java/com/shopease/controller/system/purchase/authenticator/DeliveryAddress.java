@@ -1,6 +1,6 @@
 package com.shopease.controller.system.purchase.authenticator;
 
-import com.shopease.controller.system.users.client.Client;
+import com.shopease.persistence.model.usercommon.Client;
 
 public class DeliveryAddress {
 	private Client client;

@@ -1,4 +1,4 @@
-package com.shopease.controller.system.users;
+package com.shopease.persistence.model.enums;
 
 public enum DefaultUserParameter {
 	NAME("name"),
