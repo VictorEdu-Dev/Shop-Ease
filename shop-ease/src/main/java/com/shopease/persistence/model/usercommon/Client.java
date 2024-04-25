@@ -1,18 +1,48 @@
-package com.shopease.controller.system.users.client;
+package com.shopease.persistence.model.usercommon;
 
-import com.shopease.controller.system.users.DefaultUser;
+import com.shopease.persistence.model.DefaultUser;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "client_user")
 public class Client extends DefaultUser {
-	private int id;
-	private String name;
-	private String address;
-	private String homeNumber;
-	private String neighborhood;
-	private String city;
-	private String state;
-	private String country;
+	private static final String NAME = "name";
+	private static final String ADDRESS = "address";
+	private static final String HOMENUMBER = "home_number";
+	private static final String NEIGHBORHOOD = "neighborhood";
+	private static final String CITY = "city";
+	private static final String STATE = "state";
+	private static final String COUNTRY = "country";
+	private static final String EMAIL = "email";
+	private static final String PHONENUMBER = "phone_number";
+
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	@Column(name = NAME)
+	private String name;
+	@Column(name = ADDRESS)
+	private String address;
+	@Column(name = HOMENUMBER)
+	private String homeNumber;
+	@Column(name = NEIGHBORHOOD)
+	private String neighborhood;
+	@Column(name = CITY)
+	private String city;
+	@Column(name = STATE)
+	private String state;
+	@Column(name = COUNTRY)
+	private String country;
+	@Column(name = EMAIL)
 	private String email;
+	@Column(name = PHONENUMBER)
 	private String phoneNumber;
 	
 	public Client() {
