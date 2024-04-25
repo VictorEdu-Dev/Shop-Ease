@@ -8,6 +8,7 @@
     <title>Perfil do Administrador</title>
     <link rel="stylesheet" type="text/css" href="<c:url value='/content/assets/css/login-page-admin/system-admin-profile/admin-profile.css' />">
     <script type="text/javascript" src="<c:url value='/content/assets/js/login-page-admin/system-admin/system-admin-contents.js' />"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <jsp:include page="/WEB-INF/view/header-footer/header.jsp"></jsp:include>
