@@ -2,9 +2,19 @@ package com.shopease.controller.system.stock;
 
 import java.io.Serializable;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "stock_batch")
 public class Product implements Serializable {
 	private static final long serialVersionUID = -351563657586067466L;
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private String id;
 	private String category;
 	private String description; 
