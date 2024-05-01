@@ -61,16 +61,16 @@ public class WebConfig implements WebMvcConfigurer, WebSocketConfigurer {
 	public DataSource dataSource() {
 		BasicDataSource dataSource = new BasicDataSource();
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/shop_ease_database");
-		dataSource.setUsername("root");
-		dataSource.setPassword("Vv_vepc6374@,11111");
+		dataSource.setUrl("jdbc:mysql://sql10.freesqldatabase.com/sql10703105");
+		dataSource.setUsername("sql10703105");
+		dataSource.setPassword("L2QBgDa7fn");
 		return dataSource;
 	}
 	
-	@Bean
-	public DataSource mysqlDataSource() {
-	    return dataSource();
-	}
+//	@Bean
+//	public DataSource mysqlDataSource() {
+//	    return dataSource();
+//	}
 	
 	@Bean
 	public ViewResolver internalViewResolver() {
@@ -97,7 +97,7 @@ public class WebConfig implements WebMvcConfigurer, WebSocketConfigurer {
 	@Bean
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
 		LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
-		em.setDataSource(mysqlDataSource());
+		em.setDataSource(dataSource());
 		em.setPackagesToScan("com.shopease.persistence");
 		em.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 		em.setPersistenceProviderClass(HibernatePersistenceProvider.class);
@@ -121,7 +121,6 @@ public class WebConfig implements WebMvcConfigurer, WebSocketConfigurer {
         return transactionManager;
     }
 
-	@Bean
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
         registry.addHandler(new Endpoint(), "/chat").setAllowedOrigins("*");
     }
