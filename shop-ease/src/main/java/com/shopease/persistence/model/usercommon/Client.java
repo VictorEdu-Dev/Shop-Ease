@@ -1,26 +1,25 @@
 package com.shopease.persistence.model.usercommon;
 
-import com.shopease.persistence.model.DefaultUser;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
 @Entity
 @Table(name = "client_user")
-public class Client extends DefaultUser {
+public class Client {
 	private static final String NAME = "name";
 	private static final String ADDRESS = "address";
-	private static final String HOMENUMBER = "home_number";
+	private static final String HOMENUMBER = "homeNumber";
 	private static final String NEIGHBORHOOD = "neighborhood";
 	private static final String CITY = "city";
 	private static final String STATE = "state";
 	private static final String COUNTRY = "country";
 	private static final String EMAIL = "email";
-	private static final String PHONENUMBER = "phone_number";
+	private static final String PHONENUMBER = "phoneNumber";
 
 	
 	@Id
@@ -44,6 +43,10 @@ public class Client extends DefaultUser {
 	private String email;
 	@Column(name = PHONENUMBER)
 	private String phoneNumber;
+	@Transient
+	private String username;
+	@Transient
+	private String password;
 	
 	public Client() {
 		
@@ -143,6 +146,23 @@ public class Client extends DefaultUser {
 
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	@Override
