@@ -27,8 +27,8 @@
                     <input type="text" id="address" name="address" required>
                 </div>
                 <div class="form-group">
-                    <label for="home_number">Nº</label>
-                    <input type="text" id="home_number" name="home_number" required>
+                    <label for="homeNumber">Nº</label>
+                    <input type="text" id="homeNumber" name="homeNumber" required>
                 </div>
                 <div class="form-group">
                     <label for="neighborhood">Bairro</label>
@@ -51,8 +51,8 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="phone_number">Telefone</label>
-                    <input type="text" id="phone_number" name="phone_number" required>
+                    <label for="phoneNumber">Telefone</label>
+                    <input type="text" id="phoneNumber" name="phoneNumber" required>
                 </div>
                 <div class="form-group">
                     <input type="submit" id="submitButton" value="Enviar">
@@ -73,9 +73,9 @@
     		<button id="loadList" onclick="loadListView('${pageContext.request.contextPath}/reqLoadListClient')">Carregar lista</button>
     		<button id="loadList" onclick="loadListView('${pageContext.request.contextPath}/reqEditLine')">Editar linha</button>
     		<button id="loadList" onclick="loadListView('${pageContext.request.contextPath}/reqDeleteLine')">Deletar linha</button>
-    		<div class="table-view-container" id="table-view-container">
+    		<iframe class="table-view-container" id="table-view-container">
 	    		
-			</div>
+			</iframe>
     	</div>
     </section>
 </main>
