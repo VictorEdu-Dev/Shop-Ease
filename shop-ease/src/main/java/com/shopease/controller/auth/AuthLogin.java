@@ -32,10 +32,10 @@ public class AuthLogin {
 	@RequestMapping(Action.TAKE_LOGIN)
 	public String takeLogin(AdminUser user, HttpSession session) {
 		if(session.getAttribute(Constant.ATRIBUTE_SESSION.getContent()) != null) {
-			return Path.HOME_PAGE_DEFAULT.getContent();
+			return Path.SYSTEM_ADMIN_PROFILE.getContent();
 		} else if(authSess.findByObject(user) != null) {
 			session.setAttribute(Constant.ATRIBUTE_SESSION.getContent(), user);
-			return Path.HOME_PAGE_DEFAULT.getContent();
+			return Path.SYSTEM_ADMIN_PROFILE.getContent();
 		} else {
 			return Action.REDIRECT_AUTHLOGIN;
 		}
