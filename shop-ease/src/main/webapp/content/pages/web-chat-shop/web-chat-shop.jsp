@@ -9,7 +9,7 @@
     <script src="js/chat.js"></script>
 </head>
 <body>
-<jsp:include page="../header-footer/header.jsp"/>
+<jsp:include page="/WEB-INF/view/header-footer/header.jsp"/>
 <div class="main-chat-page">
     <div class="main-chat">
         <div class="main-chat-open">
@@ -22,6 +22,6 @@
         </div>
     </div>
 </div>
-<jsp:include page="../header-footer/footer.jsp"></jsp:include>
+<jsp:include page="/WEB-INF/view/header-footer/footer.jsp"></jsp:include>
 </body>
 </html>

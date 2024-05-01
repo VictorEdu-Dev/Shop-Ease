@@ -7,15 +7,15 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0">
     <title>ShopEase</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="<%= request.getContextPath()%>/content/assets/css/home-page.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<jsp:include page="pages/header-footer/header.jsp"></jsp:include>
+<jsp:include page="/WEB-INF/view/header-footer/header.jsp"></jsp:include>
     <main class="home-main">
 	    <div class="content-home">
 	        <!-- Conteúdo da página principal -->
 	    </div>
     </main>
-<jsp:include page="pages/header-footer/footer.jsp"></jsp:include>
+<jsp:include page="/WEB-INF/view/header-footer/footer.jsp"></jsp:include>
 </body>
 </html>
